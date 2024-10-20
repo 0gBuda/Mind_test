@@ -6,7 +6,7 @@ from sqlalchemy.ext.asyncio import AsyncSession
 from app.auth.crud import get_user_by_email
 from app.database import get_db
 
-SECRET_KEY = "your_secret_key"
+SECRET_KEY = "Secret_key"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 

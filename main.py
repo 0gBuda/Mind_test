@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.auth.routes import router as user_router
+from app.messages.routes import router as mess_router
 
 app = FastAPI()
 
@@ -11,3 +12,4 @@ async def root():
 
 # Подключаем маршруты для пользователей
 app.include_router(user_router, prefix="/users")
+app.include_router(mess_router, prefix="/messages")
